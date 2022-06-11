@@ -1,0 +1,10 @@
+# docker-compose up --build simple
+
+version: "3"
+services:
+  simple:
+    build:
+      context: .
+      dockerfile: simple.Dockerfile
+    ports:
+      - 3001:80
